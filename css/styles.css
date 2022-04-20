@@ -1,3 +1,68 @@
+/* цвет остновного текста #212121 */
+
+/* цвет вторичного текста rgba(117, 117, 117, 1) */
+
+/* акцент rgba(33, 150, 243, 1) */
+
+/* цвет контактов в футере rgba(255, 255, 255, 0.6) */
+
+
+/* Satting */
+:root{
+    --primery-text-color: rgba(117, 117, 117, 1);
+    --title-text-color: rgba(33, 33, 33, 1);
+    --accent-color: rgba(33, 150, 243, 1);
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --page-color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration-style: none;}
+ul li{list-style: none;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+
+
 body {
- background-color: #fff;
+    background-repeat: #ffffff;
+    color: rgba(117, 117, 117, 1);
+}
+
+
+/* Site nav  */
+
+.logo {
+    color: rgba(33, 150, 243, 1);
+}
+.logo-studio {
+    color: #212121;;
+}
+
+.site-nav a {
+    color: var(--accent-color);
 }
