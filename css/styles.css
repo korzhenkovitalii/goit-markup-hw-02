@@ -13,6 +13,7 @@
     --title-text-color: rgba(33, 33, 33, 1);
     --accent-color: rgba(33, 150, 243, 1);
     --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --hero-color: rgba(255, 255, 255, 1)
     --page-color: #ffffff;
 }
 
@@ -52,9 +53,8 @@ body {
     background-repeat: #ffffff;
     color: rgba(117, 117, 117, 1);
 }
-
-
-/* Site nav  */
+/* --------------------------------------------------  */
+/* Header */
 
 .logo {
     color: rgba(33, 150, 243, 1);
@@ -63,6 +63,62 @@ body {
     color: #212121;;
 }
 
-.site-nav a {
+/* Site nav  */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--accent-color);
+}
+.site-nav .link.current{
+color: var(--accent-color);
+}
+
+.auth-nav a{
+color: var(--title-text-color);
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus{
+    color: var(--accent-color);
+    }
+/* --------------------------------------------------  */
+    
+
+
+/* Main  */
+ /* hero  */
+.hero-title{
+        color: var(--hero-color);
+    }
+.button{
+    color: #ffffff;
+    background-color: var(--accent-color);
+}
+    
+/* section  */
+ .section-title {
+        color: var(--title-text-color);
+    }
+
+    /* наша команда  */
+
+.name{
+        color: var(--title-text-color);
+    }
+.position{
+     color: var(--primery-text-color);
+        }
+
+    
+  /* --------------------------------------------- */
+  /* footer  */
+
+.address{
+    color: var(--hero-color);
+}
+.contacts{
+    color: var(--footer-contact-color);
+    background-color: rgba(47, 48, 58, 1);
 }
