@@ -13,7 +13,8 @@
     --title-text-color: rgba(33, 33, 33, 1);
     --accent-color: rgba(33, 150, 243, 1);
     --footer-contact-color: rgba(255, 255, 255, 0.6);
-    --hero-color: rgba(255, 255, 255, 1)
+    --hero-color: rgba(255, 255, 255, 1);
+    --batton-portfolio: rgba(245, 244, 250, 1);
     --page-color: #ffffff;
 }
 
@@ -23,12 +24,6 @@
     border: 0;
 }
 
-*,*::before,*::after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 
@@ -36,36 +31,31 @@ nav,footer,header,aside{display: block;}
 html,body{
     height: 100%;
     width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
 }
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration-style: none;}
 ul li{list-style: none;}
-
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
-
-
 
 
 body {
-    background-repeat: #ffffff;
-    color: rgba(117, 117, 117, 1);
+    background-repeat: var(--page-color);
+    color: var(--primery-text-color);
+    font-family: Roboto,sans-serif;
+    letter-spacing: 0.03em;
 }
 /* --------------------------------------------------  */
 /* Header */
 
 .logo {
-    color: rgba(33, 150, 243, 1);
+    color: var(--accent-color);
+    font-family: Raleway,sans-serif;
 }
 .logo-studio {
-    color: #212121;;
+    color: var(--title-text-color);
 }
 
 /* Site nav  */
 .site-nav .link {
     color: var(--title-text-color);
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -77,6 +67,7 @@ color: var(--accent-color);
 
 .auth-nav a{
 color: var(--title-text-color);
+letter-spacing: 0.02em;
 }
 
 .auth-nav a:hover,
@@ -86,39 +77,43 @@ color: var(--title-text-color);
 /* --------------------------------------------------  */
     
 
-
-/* Main  */
+/* main  */
  /* hero  */
 .hero-title{
         color: var(--hero-color);
     }
-.button{
-    color: #ffffff;
+button{
+    color: var(--hero-color);
     background-color: var(--accent-color);
 }
+
+h2,
+h3,
+h4 {
+    color: var(--title-text-color);
+}
+/* Особености  */
+
+.features-content{
     
-/* section  */
- .section-title {
-        color: var(--title-text-color);
-    }
+}
 
-    /* наша команда  */
 
-.name{
-        color: var(--title-text-color);
-    }
-.position{
-     color: var(--primery-text-color);
-        }
-
-    
-  /* --------------------------------------------- */
+/* --------------------------------------------- */
   /* footer  */
 
 .address{
     color: var(--hero-color);
 }
-.contacts{
-    color: var(--footer-contact-color);
-    background-color: rgba(47, 48, 58, 1);
+
+/* main-pertfolio  */
+.btn{
+    background-color: var(--batton-portfolio);
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+}
+.auth-nav a {
+    color: var(--title-text-color);
 }
