@@ -118,6 +118,7 @@ h4 {
     width: 200px;
     height: 50px;
     left: 700px;
+    cursor: pointer;
 }
 /* Особености  */
 .features-title,
@@ -165,6 +166,7 @@ h4 {
 .btn{
     background-color: var(--batton-portfolio);
     color: var(--title-text-color);
+    cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
